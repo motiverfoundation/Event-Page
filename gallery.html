@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  .modal-backdrop {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color: #000;
+}
+</style>
+
+<body >
+
+    <!-- <center><b><h1>Events</h1></b></center> -->
+
+  <!-- 1st 1st -->
+  <div class = "gallery" >
+    <div class="container">
+        <div class="clipped-border" onclick="Fun()">
+              
+          <img src="assets/e-tambola.jpg" class="clipped">
+          <div class="overlay overlayFade">
+            <div class="text">E-Tambola</div>
+        </div>
+        
+        </div>
+      
+      
+        
+    
+    
+    <!-- 2nd 1st -->
+    <div class="clipped-border" onclick="Fun1()" >
+      <img src="assets/techathon1.jpg" class="clipped"  >
+      <div class="overlay overlayFade">
+        <div class="text">Tech-a-thon</div>
+    </div>
+    </div>
+   
+    <!-- 3rd 1st -->
+    <div class="clipped-border" onclick="Fun2()" >
+      <img src="assets/greedyqueen.jpg" id="clipped" >
+      <div class="overlay overlayFade">
+        <div class="text">The Greedy Queen</div>
+    </div>
+    </div>
+   
+      
+    <!-- 1st 2nd-->
+    <div class="clipped-border" onclick="Fun3()" >
+      <img src="assets/selectfrombrain.jpg" id="clipped"  >
+      <div class="overlay overlayFade">
+        <div class="text">Select * From Brain</div>
+    </div>
+    </div>
+ 
+      
+      
+    
+      
+      
+
+     <!-- 2nd 2nd-->
+    <div class="clipped-border" onclick="Fun4()" >
+      <!-- <div class="overlay overlayFade">
+        <div class="text">Codestrom</div>
+    </div> -->
+      <img src="assets/bizoku.jpg" id="clipped" >
+      <div class="overlay overlayFade">
+        <div class="text">Bizoku</div>
+    </div>
+    </div>
+    
+            
+        
+    
+
+
+        
+         <!-- 3rd 2nd -->
+    <div class="clipped-border" onclick="Fun5()" >
+      <img src="assets/codestorm.jpg" id="clipped"  >
+    
+      <div class="overlay overlayFade">
+        <div class="text">Codestrom</div>
+    </div>
+  </div>
+    
+             
+         
+    
+
+
+      
+           <!-- 1st 3rd -->
+    <div class="clipped-border"onclick="Fun6()"  >
+      <img src="assets/horsemangame.jpg" id="clipped"  >
+      <div class="overlay overlayFade">
+        <div class="text">The Horseman's Game</div>
+    </div>
+    </div>
+   
+    
+
+
+     
+          
+    <!-- 2nd 3rd          -->
+    <div class="clipped-border" onclick="Fun7()" >
+      <img src="assets/mystrypuzzel.jpg" id="clipped"  >
+    
+      <div class="overlay overlayFade">
+        <div class="text">OZ Runner</div>
+    </div>
+  </div>
+    
+    
+
+      <!-- 3rd 3rd       -->
+    <div class="clipped-border" onclick="Fun8()" >
+      <img src="assets/treasurehunt.jpg" id="clipped"  >
+    
+      <div class="overlay overlayFade">
+        <div class="text">Treasure Hunt</div>
+    </div>
+  </div>
+    
+
+                 
+          <!-- 1st 4th          -->
+    <div class="clipped-border" onclick="Fun9()" >
+      <img src="assets/upsidedown.jpg" id="clipped"  >
+    
+      <div class="overlay overlayFade">
+        <div class="text">Upside Down</div>
+    </div>
+  </div>
+        
+    
+
+
+    
+        <!-- 2nd 4th         -->
+    <div class="clipped-border"onclick="Fun10()"  >
+      <img src="assets/mazerunner.jpg" id="clipped" >
+    
+      <div class="overlay overlayFade">
+        <div class="text">The Maze Runner</div>
+    </div>
+  </div>
+    
+                      
+    
+
+    
+                 
+         <!-- 1st 5th                -->
+    <div class="clipped-border" onclick="Fun11()" >
+      <img src="assets/kodachrome.jpg"  id="clipped"  >
+      <div class="overlay overlayFade">
+        <div class="text">Kodachrome</div>
+    </div>
+    </div>
+              
+             
+    
+    
+      </div>
+   
+<!-- 1st 1st -->
+ <!-- Modal -->
+ <!--<div id="myModal" class="modal">
+
+   Modal content 
+  <div class="modal-content">
+    <span class="close" onclick="CloseModal()">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div> -->
+
+
+ 
+ <div class="modal" id="myModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" onclick="CloseModal()">&times;</button>
+        <h4 class="modal-title"><center><b>E-Tambola</b></center></h4>
+      </div>
+      <div class="modal-body" >
+       <p> <center><b>About</b></center>
+
+        This is a game of luck.Luck will lead you to the top of leaderboard.</p>
+        
+        <p> <center><b>Rules</b></center>1. Use of internet is not allowed.<br>
+          2. Single participation.<br>
+          3. Rest of the details will be given at the time of event.</p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div>  
+
+<!-- <div id="myModal1" class="modal">
+
+   <!-- Modal content 
+  <div class="modal-content">
+    <span class="close" onclick="CloseModal1()">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>  -->
+
+<!-- 2n 1st -->
+<div class="modal"  id="myModal1" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" onclick="CloseModal1()">&times;</button>
+        <h4 class="modal-title"><center><b>Tech-a-thon</b></center></h4>
+      </div>
+      <div class="modal-body" >
+       <p> <center><b>About</b></center>
+
+        We have seen your technical skills many time. This is the time to test your technical skills and decision making skills.</p>
+        
+        <p> <center><b>Rules</b></center>1. Team size is 4.<br>
+          2. Choose your team wisely.<br>
+          3. There will be 3 rounds.<br>
+          4. Decision of judges will be final.<br>
+          5. Rest of the details will be given at the time of event.</p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div> 
+
+
+<!-- 3rd 1st-->
+<div class="modal"    id="myModal2"  >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" onclick="CloseModal2()">&times;</button>
+   
+        <h4 class="modal-title"><center><b>The Greedy Queen</b></center></h4>
+      </div>
+      <div class="modal-body" >
+       <p> <center><b>About</b></center>
+
+        An event where each move will lead you to the destination or either a step away from it. We will test your knowledge in common subjects of your interest. </p>
+        
+        <p> <center><b>Rules</b></center>1. Use of internet is not allowed.<br>
+          2. Individual participation will be there.<br>
+          3. Rest of the details will be given at the time of event.
+        </p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div> 
+
+<!-- 1st 2nd -->
+<div class="modal"   id="myModal3" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close"onclick="CloseModal3()">&times;</button>
+        <h4 class="modal-title"><center><b>Select * From Brain</b></center></h4>
+      </div>
+      <div class="modal-body" >
+       <p> <center><b>About</b></center>
+
+        An event where your knowledge in SQL will help you to make it to the top. </p>
+        
+        <p> <center><b>Rules</b></center>1. Use of internet is not allowed.<br>
+          2.Individual participation will be there.<br>
+          3. Rest of the details will be given at the time of event.</p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div> 
+
+<!-- 2nd 2nd -->
+<div class="modal"  id="myModal4" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" onclick="CloseModal4()">&times;</button>
+        <h4 class="modal-title"><center><b>Bizoku</b></center></h4>
+      </div>
+      <div class="modal-body" >
+       <p> <center><b>About</b></center>
+
+        In the age of digitisation, why should sudoku be left behind?</p>
+        
+        <p> <center><b>Rules</b></center>1. Use of internet is not allowed.<br>
+          2.Individual participation will be there.<br>
+          3. Rest of the details will be given at the time of event.</p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div> 
+
+<!-- 3rd 2nd-->
+<div class="modal"   id="myModal5"  >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" onclick="CloseModal5()">&times;</button>
+        <h4 class="modal-title"><center><b>Codestorm</b></center></h4>
+      </div>
+      <div class="modal-body" >
+       <p> <center><b>About</b></center>
+
+        Unleash Your. Programming Skills! Our online coding technology helps you become a rockstar programmer.  </p>
+        
+        <p> <center><b>Rules</b></center>1. Use of internet is not allowed.<br>
+          2. Individual participation will be there.<br>
+          3. Rest of the details will be given at the time of event.</p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div>    
+
+<!-- 1st 3rd-->
+<div class="modal " id="myModal6"  >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" onclick="CloseModal6()">&times;</button>
+        <h4 class="modal-title"><center><b>The Horsemen's Game</b></center></h4>
+      </div>
+      <div class="modal-body" >
+       <p> <center><b>About</b></center>
+
+        We have seen your technical skills many time. This the time to test your technical skills and decision making skills.</p>
+        
+        <p> <center><b>Rules</b></center>1. Use of internet is not allowed.<br>
+          2. A team of four persons.<br>
+          3. Rest of the details will be given at the time of event.</p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div> 
+
+
+<!-- 2nd 3rd -->
+<div class="modal "   id="myModal7"  >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" onclick="CloseModal7()">&times;</button>
+        <h4 class="modal-title"><center><b>OZ Runner</b></center></h4>
+      </div>
+      <div class="modal-body" >
+       <p> <center><b>About</b></center>
+
+        City rush with addictive endless running game!
+Rush as fast as you can, Dodge the oncoming cars and obstacles.</p>
+        
+        <p> <center><b>Rules</b></center>1. Decision of judges will be final.<br></p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div>     
+       
+<!-- 3rd 3rd -->
+<div class="modal "  id="myModal8"  >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close"onclick="CloseModal8()">&times;</button>
+        <h4 class="modal-title"><center><b>Treasure Hunt</b></center></h4>
+      </div>
+      <div class="modal-body" >
+       <p> <center><b>About</b></center>
+
+        Our treasure hunts are information-based puzzle hunts in which teams use their collective brainpower to solve clues.</p>
+        
+        <p> <center><b>Rules</b></center>1. Use of internet is not allowed.<br>
+          2. A team of four persons.<br>
+          3. Rest of the details will be given at the time of event.</p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div> 
+
+ <!--1st 4th -->
+<div class="modal "   id="myModal9"  >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" onclick="CloseModal9()">&times;</button>
+        <h4 class="modal-title"><center><b>Upside Down</b></center></h4>
+      </div>
+      <div class="modal-body" >
+       <p> <center><b>About</b></center>
+
+        This is simple coding event with one twist.</p>
+        
+        <p> <center><b>Rules</b></center>1. Use of internet is not allowed.<br>
+          2.Individual participation will be there.<br>
+          3. Rest of the  details will be given at the time of event.</p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div> 
+
+<!-- 2nd 4th -->
+<div class="modal"   id="myModal10" >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" onclick="CloseModal10()">&times;</button>
+        <h4 class="modal-title"><center><b>The Maze Runner</b></center></h4>
+      </div>
+      <div class="modal-body" >
+       <p> <center><b>About</b></center>
+
+        You will be given an encrypted zip file inside of which there will be 30 puzzles to solve.</p>
+        
+        <p> <center><b>Rules</b></center>1. Use of internet is not allowed.<br>
+          2. A team of 2 persons.<br>
+          3. Rest of the details will be given at the time of event.</p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div> 
+
+
+<!-- 1st 5th-->
+<div class="modal "   id="myModal11"  >
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" >
+      <div class="modal-header">
+        <button type="button" class="close" onclick="CloseModal11()">&times;</button>
+        <h4 class="modal-title"><center><b>Kodachrome</b></center></h4>
+      </div>
+      <div class="modal-body" >
+       <p> <center><b>About</b></center>
+
+        An online submission event in which participant need to make the picture as much funny as possible.</p>
+        
+        <p> <center><b>Rules</b></center>1. Use of internet is not allowed.<br>
+          2. Individual participation will be there.<br>
+          3. Decision of judges will be final.
+          </p>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+    </div>
+  </div>
+</div> 
+             
+
+  <div class="modal-backdrop fade in" style="z-index: -2;"></div>
+
+  <style>
+    #header{
+      min-height:100px;
+    }
+    #menu{
+      min-height:40px;
+    }
+    #body{
+      min-height:400px;
+      /* margin-top:1%; */
+    }
+    #footer{
+      min-height:100px;
+      /* margin-top:1%; */
+    }
+    #header,#menu,#body,#footer{
+      margin-left:10%;
+      margin-right:10%;
+    }
+    @viewport{
+      zoom:1;
+      width: extend-to-zoom;
+    }
+    @-ms-viewport{
+      
+      width: extend-to-zoom;
+      zoom:1;
+    }
+  </style>
+
+<script>
+  function Fun()
+  {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "block";
+  }
+  function CloseModal() 
+  {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+  }
+  function Fun1()
+  {
+    var modal = document.getElementById("myModal1");
+    modal.style.display = "block";
+  }
+  function CloseModal1() 
+  {
+    var modal = document.getElementById("myModal1");
+    modal.style.display = "none";
+  }
+  function Fun2()
+  {
+    var modal = document.getElementById("myModal2");
+    modal.style.display = "block";
+  }
+  function CloseModal2() 
+  {
+    var modal = document.getElementById("myModal2");
+    modal.style.display = "none";
+  }
+  function Fun3()
+  {
+    var modal = document.getElementById("myModal3");
+    modal.style.display = "block";
+  }
+  function CloseModal3() 
+  {
+    var modal = document.getElementById("myModal3");
+    modal.style.display = "none";
+  }
+  function Fun4()
+  {
+    var modal = document.getElementById("myModal4");
+    modal.style.display = "block";
+  }
+  function CloseModal4() 
+  {
+    var modal = document.getElementById("myModal4");
+    modal.style.display = "none";
+  }
+  function Fun5()
+  {
+    var modal = document.getElementById("myModal5");
+    modal.style.display = "block";
+  }
+  function CloseModal5() 
+  {
+    var modal = document.getElementById("myModal5");
+    modal.style.display = "none";
+  }
+  function Fun6()
+  {
+    var modal = document.getElementById("myModal6");
+    modal.style.display = "block";
+  }
+  function CloseModal6() 
+  {
+    var modal = document.getElementById("myModal6");
+    modal.style.display = "none";
+  }
+  function Fun7()
+  {
+    var modal = document.getElementById("myModal7");
+    modal.style.display = "block";
+  }
+  function CloseModal7() 
+  {
+    var modal = document.getElementById("myModal7");
+    modal.style.display = "none";
+  }
+  function Fun8()
+  {
+    var modal = document.getElementById("myModal8");
+    modal.style.display = "block";
+  }
+  function CloseModal8() 
+  {
+    var modal = document.getElementById("myModal8");
+    modal.style.display = "none";
+  }
+  function Fun9()
+  {
+    var modal = document.getElementById("myModal9");
+    modal.style.display = "block";
+  }
+  function CloseModal9() 
+  {
+    var modal = document.getElementById("myModal9");
+    modal.style.display = "none";
+  }
+  function Fun10()
+  {
+    var modal = document.getElementById("myModal10");
+    modal.style.display = "block";
+  }
+  function CloseModal10() 
+  {
+    var modal = document.getElementById("myModal10");
+    modal.style.display = "none";
+  }
+  function Fun11()
+  {
+    var modal = document.getElementById("myModal11");
+    modal.style.display = "block";
+  }
+  function CloseModal11() 
+  {
+    var modal = document.getElementById("myModal11");
+    modal.style.display = "none";
+  }
+  </script>
+
+
+
+
+</body>
+</html>
+
+
+
+  
+  
